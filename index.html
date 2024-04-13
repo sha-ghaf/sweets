@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+        <!-- css link -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- ===================== start header ===================== -->
+        <header class="header scroll-header">
+            <a href="#home"><img src="img/logo.svg" alt=""></a>
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#store">store</a>
+                <a href="#events">events</a>
+                <a href="#review">Review</a>
+                <a href="#contact"><p><i class="fa-solid fa-phone"></i> + 123 456 789</p></a>
+            </nav>
+            <div class="icon">
+                <div class="fas fa-bars" id="menu-btn"></div>
+                <p><a href="#contact"><i class="fa-solid fa-phone"></i> + 123 456 789</a></p>
+                <button id="cart-btn"><i class="fa-solid fa-cart-shopping"></i>
+                    <span id="item-count">0 </span> items - $<span class="item-total">0.00</span>
+                </button>
+            </div>
+            <div class="shopping-cart">
+                <div id="cart">
+                    <!-- <div class="box">
+                        <i class="fas fa-trash"></i>
+                        <img src="imgs/cake-1.jpeg" alt="">
+                        <div class="content">
+                            <h3>Watermelon</h3>
+                            <span class="price">$4.99/- </span>
+                            <span class="quantity">Qty : 1</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-trash"></i>
+                        <img src="img-cart/cake-2.jpeg" alt="">
+                        <div class="content">
+                            <h3>cake</h3>
+                            <span class="price">$ <strong class="cart-item-price">5</strong> /- </span>
+                            <span class="quantity">Qty : 1</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-trash"></i>
+                        <img src="img-cart/doughnut-1.jpeg" alt="">
+                        <div class="content">
+                            <h3>Doughnuts</h3>
+                            <span class="price">$ <strong class="cart-item-price">5</strong> /- </span>
+                            <span class="quantity">Qty : 1</span>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="total"> total : $<span id="cart-total">0.00</span></div>
+                <a href="#" class="btn">checkout</a>
+            </div>
+        </header>
+        <!-- ===================== end header ===================== -->
+        <!-- ===================== start home ===================== -->
+        <section class="home section" id="home">
+            <div>
+                <h1>Welcome To<span> Grandma's</span></h1>
+                <button class="main">Explore</button>
+            </div>
+        </section>
+        <!-- ===================== end home ===================== -->
+        <!-- ===================== start about ===================== -->
+        <section class="about section" id="about">
+            <div class="text">
+                <h2 class="heading">about <span>us</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Velit, aliquam voluptas beatae vitae expedita consectetur 
+                    nesciunt quia deserunt asperiores facere fuga dicta fugiat 
+                    corrupti et omnis porro at dolorum! Ad!
+                </p>
+                <button class="btn">explore</button>
+            </div>
+            <div class="img">
+                <img src="img/sweets-1.jpeg" alt="">
+            </div>
+        </section>
+        <div class="spikes"></div>
+        <!-- ===================== end about ===================== -->
+        <!-- ===================== start store ===================== -->
+        <section class="store section" id="store">
+            <h2 class="heading">our <span>store</span></h2>
+            <ul>
+                <li data-cat=".all" class="btn active">All</li>
+                <li data-cat=".cakes" class="btn">cakes</li>
+                <li data-cat=".cupcakes" class="btn">cupcakes</li>
+                <li data-cat=".sweets" class="btn">sweets</li>
+                <li data-cat=".doughnuts" class="btn">doughnuts</li>
+            </ul>
+            <form action="">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="items...">
+            </form>
+            <div class="container">
+                <div class="box all sweets">
+                    <div class="img">
+                        <img src="img/sweets-1.jpeg" alt="">
+                        <span class="store-item-icon">
+                            <i class="fa-solid fa-cart-shopping"  id="theme-button"></i>
+                        </span>
+                    </div>
+                    <div class="text">
+                        <p>Sweet Item</p>
+                        <p>$ <strong>5</strong></p>
+                    </div>
+                </div>
+                <div class="box all cupcakes">
+                    <div class="img">
+                        <img src="img/cupcake-1.jpeg" alt="">
+                        <span class="store-item-icon">
+                            <i class="fa-solid fa-cart-shopping" id="theme-button"></i>
+                        </span> 
+                    </div>
+                    <div class="text">
+                        <p>Cupcake Item</p>
+                        <p>$ <strong>5</strong></p>
+                    </div>
+                </div>
+                <div class="box all cakes">
+                    <div class="img">
+                        <img src="img/cake-1.jpeg" alt="">
+                        <span  class="store-item-icon">
+                            <i class="fa-solid fa-cart-shopping" id="theme-button"></i>
+                        </span> 
+                    </div>
+                    <div class="text">
+                        <p>Cake Item</p>
+                        <p>$ <strong>5</strong></p>
+                    </div>
+                </div>
+                <div class="box all doughnuts">
+                    <div class="img">
+                        <img src="img/doughnut-1.jpeg" alt="">
+                        <span class="store-item-icon">
+                            <i class="fa-solid fa-cart-shopping" id="theme-button"></i>
+                        </span>
+                    </div> 
+                    <div class="text">
+                        <p>Doughnut Item</p>
+                        <p>$ <strong>5</strong></p>
+                    </div>
+                </div>
+                <div class="box all sweets">
+                    <div class="img">
+                        <img src="img/sweets-2.jpeg" alt="">
+                        <span class="store-item-icon">
+                            <i class="fa-solid fa-cart-shopping" id="theme-button"></i>
+                        </span>
+                    </div>
+                    <div class="text">
+                        <p>Sweet Item</p>
+                        <p>$ <strong>10</strong></p>
+                    </div>
+                </div>
+                <div class="box all cupcakes">
+                    <div class="img">
+                        <img src="img/cupcake-2.jpeg" alt="">
+                        <span class="store-item-icon">
+                            <i class="fa-solid fa-cart-shopping" id="theme-button"></i>
+                        </span>
+                    </div>
+                    <div class="text">
+                        <p>Cupcake Item</p>
+                        <p>$ <strong>10</strong></p>
+                    </div>
+                </div>
+                <div class="box all cakes">
+                    <div class="img">
+                        <img src="img/cake-2.jpeg" alt="">
+                        <span class="store-item-icon">
+                            <i class="fa-solid fa-cart-shopping" id="theme-button"></i>
+                        </span>
+                    </div>
+                    <div class="text">
+                        <p>Cake Item</p>
+                        <p>$ <strong>10</strong></p>
+                    </div>
+                </div>
+                <div class="box all doughnuts">
+                    <div class="img">
+                        <img src="img/doughnut-2.jpeg" alt="">
+                        <span class="store-item-icon">
+                            <i class="fa-solid fa-cart-shopping" id="theme-button"></i>
+                        </span>
+                    </div>
+                    <div class="text">
+                        <p>Doughnut Item</p>
+                        <p>$ <strong>10</strong></p>
+                    </div>
+                </div>
+                <div class="box all sweets">
+                    <div class="img">
+                        <img src="img/sweets-3.jpeg" alt="">
+                        <span class="store-item-icon">
+                            <i class="fa-solid fa-cart-shopping" id="theme-button"></i>
+                        </span>
+                    </div>
+                    <div class="text">
+                        <p>Sweet Item</p>
+                        <p>$ <strong>15</strong></p>
+                    </div>
+                </div>
+                <div class="box all cupcakes">
+                    <div class="img">
+                        <img src="img/cupcake-3.jpeg" alt="">
+                        <span class="store-item-icon">
+                            <i class="fa-solid fa-cart-shopping" id="theme-button"></i>
+                        </span>
+                    </div>
+                    <div class="text">
+                        <p>Cupcake Item</p>
+                        <p>$ <strong>15</strong></p>
+                    </div>
+                </div>
+                <div class="box all cakes">
+                    <div class="img">
+                        <img src="img/cake-3.jpeg" alt="">
+                        <span class="store-item-icon">
+                            <i class="fa-solid fa-cart-shopping" id="theme-button"></i>
+                        </span>
+                    </div>
+                    <div class="text">
+                        <p>Cake Item</p>
+                        <p>$ <strong>15</strong></p>
+                    </div>
+                </div>
+                <div class="box all doughnuts">
+                    <div class="img">
+                        <img src="img/doughnut-3.jpeg" alt="">
+                        <span class="store-item-icon">
+                            <i class="fa-solid fa-cart-shopping" id="theme-button"></i>
+                        </span>
+                    </div>
+                    <div class="text">
+                        <p>Doughnut Item</p>
+                        <p>$ <strong>15</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===================== end store ===================== -->
+        <!-- ===================== start event ===================== -->
+        <section class="events section" id="events">
+            <!-- <div class="dots dots-up"></div>
+            <div class="dots dots-down"></div> -->
+            <h2 class="heading">Letest <span>Events</span></h2>
+            <div class="container">
+                <img src="img/events.png" alt="">
+                <div class="info">
+                    <div class="time">
+                        <div class="unit">
+                            <span class="days">15</span>
+                            <span>Days</span>
+                        </div>
+                        <div class="unit">
+                            <span class="hours">08</span>
+                            <span>Hours</span>
+                        </div>
+                        <div class="unit">
+                            <span class="minutes">45</span>
+                            <span>Minutes</span>
+                        </div>
+                        <div class="unit">
+                            <span class="seconds">55</span>
+                            <span>seconds</span>
+                        </div>
+                    </div>
+                    <h2 class="title">tech Masters Event 2023</h2>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur, 
+                        adipisicing elit. Veritatis mollitia vitae, vel a ab, laudantium 
+                        quas perspiciatis id, totam tenetur nostrum necessitatibus? Veniam
+                        , ullam atque! Aut veniam quidem corporis nulla?
+                    </p>
+                </div>
+                <div class="subscribe">
+                    <form action="">
+                        <input type="email" placeholder="Enter Your Email">
+                        <input type="submit" value="subscribe">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="spikes"></div>
+        <!-- ===================== end event ===================== -->
+        <!-- ===================== start review ===================== -->
+        <section class="review section" id="review">
+            <h1 class="heading"> customer's <span>review</span> </h1>
+            <div class="swiper review-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide box">
+                        <img src="img/pic-1.png" alt="">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.
+                        </p>
+                        <h3>john deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="img/pic-2.png" alt="">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.
+                        </p>
+                        <h3>john deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="img/pic-3.png" alt="">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.
+                        </p>
+                        <h3>john deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="img/pic-4.png" alt="">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.
+                        </p>
+                        <h3>john deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===================== end review ===================== -->
+        <!-- ===================== start footer ===================== -->
+        <section class="footer section" id="contact">
+            <div class="box-container">
+                <div class="box">
+                    <h3> Grandma's <img src="img/logo.svg" alt=""></h3>
+                    <p>Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit. Aliquam, Saepe.</p>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <h3>contact info</h3>
+                    <a href="#" class="links"><i class="fas fa-phone"></i> +123-456-789</a>
+                    <a href="#" class="links"><i class="fas fa-phone"></i> +111-222-333</a>
+                    <a href="#" class="links"><i class="fas fa-envelope"></i> shaikhanas@gmail.com</a>
+                    <a href="#" class="links"><i class="fas fa-map-marker-alt"></i> mumbai, india - 400104</a>
+                </div>
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#home" class="links"><i class="fas fa-arrow-right"></i> home</a>
+                    <a href="#features" class="links"><i class="fas fa-arrow-right"></i> About</a>
+                    <a href="#products" class="links"><i class="fas fa-arrow-right"></i> Store</a>
+                    <a href="#categories" class="links"><i class="fas fa-arrow-right"></i> events</a>
+                    <a href="#review" class="links"><i class="fas fa-arrow-right"></i> review</a>
+                </div>
+                <div class="box">
+                    <h3>newsletter</h3>
+                    <p>subscribe for latest updates</p>
+                    <input type="email" placeholder="your email" class="email">
+                    <input type="submit" value="subscribe" class="btn">
+                    <!-- <img src="img/payment.png" class="payment-img" alt=""> -->
+                </div>
+            </div>
+            <div class="credit"> created by <span> Eng: Shimaa Mohamed </span> | all rights reserved </div>
+        </section>
+        <!-- ===================== end footer ===================== -->
+        <!--=============== Theme Customize ===============-->
+        <div class="customize-theme">
+            <div class="card-alert">
+                <p>item add to the cart.!?</p>
+                <button>ok</button>
+            </div>
+        </div>
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        <!-- custom js file link -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
